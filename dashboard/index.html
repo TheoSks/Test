@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sales Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-sync"></i>
+                <span>sync</span>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-chart-line"></i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-store"></i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-credit-card"></i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-truck"></i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-bell"></i>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="#" class="nav-item">
+                    <i class="fas fa-dollar-sign"></i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-file-alt"></i>
+                </a>
+                <div class="ai-badge">
+                    <span>AI</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h1>Dashboard</h1>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search orders...">
+                </div>
+                <div class="header-actions">
+                    <button class="btn-icon">
+                        <i class="fas fa-print"></i>
+                        <span>Print report</span>
+                    </button>
+                    <button class="btn-icon">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Summary</span>
+                    </button>
+                    <button class="btn-icon">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-grid">
+                <!-- Sales Growth Summary -->
+                <section class="card sales-summary">
+                    <div class="card-header">
+                        <h2>Sales Growth Summary</h2>
+                        <div class="date-filter">
+                            <span>January - June 2024</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="sales-content">
+                        <div class="sales-stats">
+                            <div class="stat-main">
+                                <span class="stat-label">Total Revenue</span>
+                                <div class="stat-value-group">
+                                    <h3 class="stat-value">$290,340</h3>
+                                    <span class="stat-change positive">+12%</span>
+                                </div>
+                            </div>
+
+                            <div class="stat-item">
+                                <span class="stat-label">Average Monthly</span>
+                                <div class="stat-bar">
+                                    <div class="bar-fill" style="width: 77%; background-color: #C30117;"></div>
+                                </div>
+                                <span class="stat-amount">$48,390</span>
+                            </div>
+
+                            <div class="stat-item">
+                                <span class="stat-label">Highest Month</span>
+                                <div class="stat-bar">
+                                    <div class="bar-fill" style="width: 100%; background-color: #C30117;"></div>
+                                </div>
+                                <span class="stat-amount">$62,345</span>
+                            </div>
+
+                            <div class="stat-item">
+                                <span class="stat-label">Lowest Month</span>
+                                <div class="stat-bar">
+                                    <div class="bar-fill" style="width: 38%; background-color: #C30117;"></div>
+                                </div>
+                                <span class="stat-amount">$23,890</span>
+                            </div>
+
+                            <div class="target-reached">
+                                <i class="fas fa-check-circle"></i>
+                                <span>92% of quarterly target reached</span>
+                            </div>
+                        </div>
+
+                        <div class="sales-chart">
+                            <div class="chart-container">
+                                <div class="chart-bar" data-month="Jan" style="height: 45%;"></div>
+                                <div class="chart-bar" data-month="Feb" style="height: 60%;"></div>
+                                <div class="chart-bar" data-month="Mar" style="height: 55%;"></div>
+                                <div class="chart-bar" data-month="Apr" style="height: 70%;"></div>
+                                <div class="chart-bar" data-month="May" style="height: 75%;"></div>
+                                <div class="chart-bar" data-month="Jun" style="height: 85%;"></div>
+                            </div>
+                            <div class="chart-labels">
+                                <span>Jan</span>
+                                <span>Feb</span>
+                                <span>Mar</span>
+                                <span>Apr</span>
+                                <span>May</span>
+                                <span>Jun</span>
+                            </div>
+                            <div class="chart-highlight">$62,345</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Top Selling Categories -->
+                <section class="card top-categories">
+                    <div class="card-header">
+                        <h2>Top Selling Categories</h2>
+                        <button class="btn-menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+
+                    <div class="categories-list">
+                        <div class="category-item">
+                            <div class="category-icon tech">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <div class="category-info">
+                                <span class="category-name">Tech & Electronics</span>
+                                <span class="category-count">734</span>
+                            </div>
+                            <span class="category-change positive">+420</span>
+                        </div>
+
+                        <div class="category-item">
+                            <div class="category-icon pet">
+                                <i class="fas fa-paw"></i>
+                            </div>
+                            <div class="category-info">
+                                <span class="category-name">Pet Supplies</span>
+                                <span class="category-count">125</span>
+                            </div>
+                            <span class="category-change positive">+82</span>
+                        </div>
+
+                        <div class="category-item">
+                            <div class="category-icon insurance">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="category-info">
+                                <span class="category-name">Real Estate Insurance</span>
+                                <span class="category-count">388</span>
+                            </div>
+                            <span class="category-change positive">+122</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recent Orders -->
+                <section class="card recent-orders">
+                    <div class="card-header">
+                        <h2>Recent Orders</h2>
+                        <div class="date-filter">
+                            <i class="far fa-calendar"></i>
+                            <span>March 10 - April 20</span>
+                        </div>
+                    </div>
+
+                    <div class="orders-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="order-customer">
+                                            <div class="avatar green">ML</div>
+                                            <span>Miracle Lubin</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="status canceled">● Canceled</span>
+                                    </td>
+                                    <td class="amount">$5,500</td>
+                                    <td class="date">08.02.2022</td>
+                                    <td>
+                                        <button class="btn-menu">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="order-customer">
+                                            <div class="avatar teal">AG</div>
+                                            <span>Angel Geidt</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="status pending">● Pending</span>
+                                    </td>
+                                    <td class="amount">$2,400</td>
+                                    <td class="date">06.02.2022</td>
+                                    <td>
+                                        <button class="btn-menu">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="order-customer">
+                                            <div class="avatar beige">ZA</div>
+                                            <span>Zaire Aminoff</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="status canceled">● Canceled</span>
+                                    </td>
+                                    <td class="amount">$6,900</td>
+                                    <td class="date">04.02.2022</td>
+                                    <td>
+                                        <button class="btn-menu">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="order-customer">
+                                            <div class="avatar pink">VA</div>
+                                            <span>Volter Anderson</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="status canceled">● Canceled</span>
+                                    </td>
+                                    <td class="amount">$4,900</td>
+                                    <td class="date">02.02.2022</td>
+                                    <td>
+                                        <button class="btn-menu">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Upgrade Card -->
+                <section class="card upgrade-card">
+                    <div class="upgrade-badge">[ $15/ month ]</div>
+                    <div class="upgrade-content">
+                        <h3>Upgrade your<br>plan today!</h3>
+                        <div class="upgrade-illustration">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <button class="btn-upgrade">Upgrade</button>
+                    </div>
+
+                    <div class="sales-info">
+                        <div class="sales-number">
+                            <strong>+245</strong> sales this half year
+                        </div>
+                        <div class="growth-rate">4% growth</div>
+                    </div>
+
+                    <div class="sales-rate-badge">
+                        <i class="fas fa-arrow-trend-up"></i>
+                        <span>Increasing the sales rate</span>
+                        <i class="far fa-smile"></i>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
